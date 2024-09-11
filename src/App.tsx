@@ -13,10 +13,8 @@ import Ex52ClickCounter from './Exercises5/Ex52ClickCounter';
 import Ex51TextInputReader from './Exercises5/Ex51TextInputReader';
 import Ex54ParagraphToggle from './Exercises5/Ex54ParagraphToggle';
 import Ex56ThreeFieldForm from './Exercises5/Ex56ThreeFieldForm';
-
-function Hello() {
-  return <h1>Hello World</h1>
-}
+import ParentClickCounter from './Exercises5/ParentClickCounter';
+import ChildClickCounter from './Exercises5/ChildClickCounter';
 
 function App() {
 
@@ -51,6 +49,8 @@ function App() {
 
   return (
     <>
+      <ChildClickCounter incrementCounter />
+      <ParentClickCounter/>      
       <Ex56ThreeFieldForm />
       <Ex54ParagraphToggle />
       <Ex51TextInputReader />
